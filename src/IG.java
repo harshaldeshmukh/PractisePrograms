@@ -75,14 +75,14 @@ public class IG {
         arrayList.add(emp2);
 
 
-        long maleCount=arrayList.stream().filter(emps->emp.getGender().equalsIgnoreCase("M")).count();
+        long maleCount=arrayList.stream().filter(emps->emps.getGender().equals("M")).count();
         System.out.println(maleCount);
 
 
         System.out.println( arrayList.stream().sorted((e1,e2)->e1.getAge()-e2.getAge()).findFirst().toString());
-      Optional<Employee> emps=  arrayList.stream().sorted((e1, e2)->e1.getAge()-e2.getAge()).findFirst();
-        emps.get();
-        System.out.println(emps.get().getAge());
+        Optional<Employee> youngestPerson=  arrayList.stream().sorted((e1, e2)->e1.getAge()-e2.getAge()).findFirst();
+        youngestPerson.get();
+        System.out.println(youngestPerson.get().getAge());
 
     }
 
