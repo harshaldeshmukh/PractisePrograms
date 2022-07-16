@@ -1,3 +1,5 @@
+package ImpPractise;
+
 public class LL {
     Node head;
     static  class Node{

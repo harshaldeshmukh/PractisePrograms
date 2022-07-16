@@ -1,3 +1,5 @@
+package ImpPractise;
+
 public class LinkedList {
     Node head;
     static  class Node{

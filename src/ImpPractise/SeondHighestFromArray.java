@@ -1,3 +1,5 @@
+package ImpPractise;
+
 public class SeondHighestFromArray {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package ImpPractise;
+
 public class PrimeNo {
     public static void main(String[] args) {
         boolean result=isPrime(10);
